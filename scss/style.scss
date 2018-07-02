@@ -1,0 +1,87 @@
+@import '_normalize';
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+@font-face {
+  font-family: 'themify';
+  src: url("../fonts/themify-icons/fonts/themify.svg");
+  src: url("../fonts/themify-icons/fonts/themify.woff") format("woff"), url("../fonts/themify-icons/fonts/themify.eot") format("eot"), url("../fonts/themify-icons/fonts/themify.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'bebas_neuebold';
+  src: url('../fonts/webfontkit-20161116/bebasneue_bold-webfont.eot');
+  src: url('../fonts/webfontkit-20161116/bebasneue_bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/webfontkit-20161116/bebasneue_bold-webfont.woff2') format('woff2'),
+  url('../fonts/webfontkit-20161116/bebasneue_bold-webfont.woff') format('woff'),
+  url('../fonts/webfontkit-20161116/bebasneue_bold-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'bebas_neuelight';
+  src: url('../fonts/webfontkit-20161116/bebasneue_light-webfont.eot');
+  src: url('../fonts/webfontkit-20161116/bebasneue_light-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/webfontkit-20161116/bebasneue_light-webfont.woff2') format('woff2'),
+  url('../fonts/webfontkit-20161116/bebasneue_light-webfont.woff') format('woff'),
+  url('../fonts/webfontkit-20161116/bebasneue_light-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'bebas_neue_regular';
+  src: url('../fonts/webfontkit-20161116/bebasneue_regular-webfont.eot');
+  src: url('../fonts/webfontkit-20161116/bebasneue_regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/webfontkit-20161116/bebasneue_regular-webfont.woff2') format('woff2'),
+  url('../fonts/webfontkit-20161116/bebasneue_regular-webfont.woff') format('woff'),
+  url('../fonts/webfontkit-20161116/bebasneue_regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'bebas_neuethin';
+  src: url('../fonts/webfontkit-20161116/bebasneue_thin-webfont.eot');
+  src: url('../fonts/webfontkit-20161116/bebasneue_thin-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/webfontkit-20161116/bebasneue_thin-webfont.woff2') format('woff2'),
+  url('../fonts/webfontkit-20161116/bebasneue_thin-webfont.woff') format('woff'),
+  url('../fonts/webfontkit-20161116/bebasneue_thin-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+$icons: 'themify', sans-serif;
+$text-font: 'Roboto', sans-serif;
+$bebas_neuebold: 'bebas_neuebold', sans-serif;
+$bebas_neuelight: 'bebas_neuelight', sans-serif;
+$bebas_neue_regular: 'bebas_neue_regular', sans-serif;
+$bebas_neuethin: 'bebas_neuethin', sans-serif;
+$text-color: #181818;
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 10px;
+}
+
+body {
+  font: 300 1.6rem/1.6 $text-font;
+  min-height: 100%;
+  color: $text-color;
+  background: #9789f9;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1200px;
+}
