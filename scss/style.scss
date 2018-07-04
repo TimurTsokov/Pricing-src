@@ -1,5 +1,5 @@
 @import '_normalize';
-@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
 
 @font-face {
   font-family: 'themify';
@@ -74,14 +74,53 @@ html {
 }
 
 body {
-  font: 300 1.6rem/1.6 $text-font;
+  font: 300 1.6rem/1.5 $text-font;
   min-height: 100%;
   color: $text-color;
   background: #9789f9;
 }
 
 .container {
-  padding-left: 20px;
-  padding-right: 20px;
-  max-width: 1200px;
+  //padding-left: 20px;
+  //padding-right: 20px;
+  //max-width: 1200px;
+}
+
+.pricing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1070px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.pricing__col {
+  width: 335px;
+  height: 610px;
+  background: #f5f4f9;
+  &--center {
+    width: 370px;
+    height: 690px;
+  }
+}
+
+.price__body {
+  height: 80%;
+  background-image: radial-gradient(ellipse 80% 100% at bottom center, #fff 0%, #fff 90%, transparent 90%);
+}
+
+.button {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: 'bebas_neuebold';
+  background: #6fcffb;
+  text-decoration: none;
+  display: inline-block;
+  width: 200px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  border-radius: 30px;
+  font-size: 1.8rem;
 }
