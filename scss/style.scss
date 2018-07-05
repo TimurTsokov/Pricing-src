@@ -94,8 +94,70 @@ body {
   flex-direction: column;
   align-items: center;
   //align-content: center;
+  position: relative;
+  &__rate {
+    font-family: 'bebas_neuethin';
+    font-size: 6rem;
+    margin: 45px 0 20px 0;
+    position: relative;
+    &:before {
+      content: '$';
+      position: absolute;
+      font-size: 2.4rem;
+      bottom: 40px;
+      right: 45px;
+    }
+    &:after {
+      font-family: 'bebas_neuelight';
+      content: '/HR';
+      position: absolute;
+      font-size: 1.6rem;
+      bottom: 20px;
+    }
+  }
+  .btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 45px;
+    background-color: #fd8d7b;
+    color: #ffffff;
+    font-size: 2.4rem;
+    font-family: 'bebas_neue_regular';
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    &:after {
+      content: '';
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      border-radius: 15px;
+      background-color: #fd8d7b;
+      top: -8px;
+      right: -7px;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      width: 7px;
+      height: 7px;
+      border-radius: 7px;
+      background-color: #fd8d7b;
+      top: -14px;
+      right: -14px;
+    }
+
+  }
+  &__position {
+    text-transform: uppercase;
+    font-family: 'bebas_neue_regular';
+    font-size: 2.4rem;
+    margin: 0;
+  }
 
 }
+
 .pricing__col {
   width: 335px;
   height: 610px;
@@ -105,6 +167,13 @@ body {
     height: 690px;
     .button {
       background: #fd8d7b;
+    }
+    &-span {
+      display: block;
+      color: #a9a9a9;
+      font-size: 1.1rem;
+      margin-top: 20px;
+      text-align: center;
     }
   }
 }
